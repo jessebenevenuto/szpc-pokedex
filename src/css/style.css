@@ -1,0 +1,133 @@
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    
+    background-color: #5e5b5bad;
+
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+}
+
+body.dark-mode {
+    background-color: #212121;
+
+    color: #F5F5F5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 25px;
+}
+
+header .logo,
+header .image-button {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #theme-button {
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .image-button:hover,
+main .card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+main .pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+main .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    width: 200px;
+    background-color: #D8E3EC;
+    padding: 15px;
+    border-radius: 15px;
+
+    transition: 0.2s ease-in-out;
+}
+
+main .card:hover {
+    background-color: #96d9d6;
+}
+
+.dark-mode .card {
+    background-color: #a8a8a8;
+}
+
+main .card .info {
+    display: flex;
+    justify-content: space-between;
+
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .card .info span {
+    padding: 5px;
+
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+main .card .gif {
+    width: 90px;
+    height: 90px;
+}
+
+main .card .types {
+    display: flex;    
+    gap: 15px;
+}
+
+main .card .type {
+    padding: 8px;
+
+    border-radius: 10px;
+}
+
+main .card .grass {
+    background-color: #7ac74c;
+}
+
+main .card .poison {
+    background-color: #df67ddfb;
+}
+
+main .card .fire {
+    background-color: #ee8130;
+}
+
+main .card .water {
+    background-color: #6390f0;
+}
+
+main .card .bug {
+    background-color: #a6b91a;
+}
+
+main .card .description {
+    max-height: 80px;
+    overflow-y: scroll;
+
+    padding-right: 10px;
+
+    font-size: 14px;
+}
